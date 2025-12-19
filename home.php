@@ -1,2 +1,2 @@
 <?php
-runFeature('node/cards', ['groupBy' => 'Nationality', 'title' => humanize(variable('node')) ]);
+runFrameworkFile('pages/articles', ['groupBy' => 'Nationality', 'title' => humanize(variable('node')) ]);

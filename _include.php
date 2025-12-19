@@ -1,13 +1,12 @@
 <?php
-define('NODEPATH', __DIR__);
-
-variables([
-	assetKey(NODEASSETS) => fileUrl(variable('section') . '/' . variable('node') . '/assets/'),
+autoSetNode(1, __DIR__, [
 	'nodeSiteName' => humanize(getPageParameterAt(1, '') . ' ' . variable('node')),
-	'nodeSafeName' => variable('node'),
-	'submenu-at-node' => getPageParameterAt(1),
-	'nodeHumanizeReplaces' => siteHumanize(ATNODE),
-	'nodeItemHumanizeReplaces' => getPageParameterAt(1) ? siteHumanize(ATNODEITEM) : [],
+	DontOverwriteLogo => true,
 ]);
 
-addStyle('tree', NODEASSETS);
+function node_before_render() {
+	variables([
+		'nodeHumanizeReplaces' => siteHumanize(ATNODE),
+		'nodeItemHumanizeReplaces' => getPageParameterAt(1) ? siteHumanize(ATNODEITEM) : [],
+	]);
+}
