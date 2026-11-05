@@ -29,8 +29,7 @@ body#blue  #content { background-color: #DDE1E6!important; } #blue .head, #blue 
 
 /*  */
 .info { cursor: hand; text-decoration: underline; }
-#information { position: absolute; background-color: #B7C7DC; display: block; color: #333;
-  padding: 8px; border: 2px #838C9B solid; font-size: 10pt; margin-right: 55px; margin-bottom: 35px; }
+#information { background-color: #B7C7DC; color: #333; border: 2px #838C9B solid; font-size: 10pt; }
 #information h3 { color: #662222; margin: 0px; } #information h6 { text-decoration: underline; margin: 8px 0px 4px 0px; }
 #information s { display: block; width: 130px; float: left; text-decoration: none; } /* use to show the heading for fields */
 
@@ -43,15 +42,15 @@ a.link { padding: 4px 8px 4px 8px; background-color: #99ccff; text-decoration: n
   color: #666; font-weight: 700; font-size: 9pt; letter-spacing: 1px; } a.link:hover { background-color: #66ff99; }
 
 /* Container Divs */
-body { font-family: Verdana, Arial, "MS Sans Serif"; cursor: default; overflow: scroll; overflow-x: hidden; margin: 0px;
-  background: url(img/tree.gif) no-repeat fixed right bottom; text-align: center; }
-body.no-tree { background-image: none; margin-bottom: 25px; }
+.family { font-family: Verdana, Arial, "MS Sans Serif"; cursor: default; margin: 0px; text-align: center; }
+.family:not(.no-tree) { background: url('tree.gif') no-repeat fixed right bottom; }
+.family.no-tree { margin-bottom: 25px; }
 
 .family-header { background-color: white; }
-.family { /*height: 100%;*/ width: 480px; margin: 15px; }
+.family { width: 480px; margin: 15px auto; }
 #information, .family, #menu { text-align: left; }
 
-/*  */
+/* header */
 #themes, #options { color: #3D4F55; font-weight: bold; font-size: 10pt; text-align: left; border-top: 2px solid white; padding: 6px; }
 #themes a, #themes a:visited { color: #3D4F55; } #themes img { margin-right: 3px; border: none; } 
 #themes { line-height: 13pt; float: left; border-right: 1px #B9C0C2 solid; }
@@ -60,4 +59,3 @@ body.no-tree { background-image: none; margin-bottom: 25px; }
 .stats { padding: 10px; }
 
 #msg a { color: blue; font-weight: bold; }
-
