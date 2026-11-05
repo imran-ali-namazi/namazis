@@ -1,0 +1,21 @@
+#key	value
+name	Namazi Family
+byline	A DAWN Site
+year	2007
+
+|labels and messages
+iconName	Namazis
+siteMenuName	Namazi Home
+description	Family tree of Shayesteh (Imran's Father)
+welcome-message	This is a DAWN Site
+footer-message	DAWN
+
+|img and styles
+safeName	namazi-tree	//NOTE: used in getLogoOr
+mediakit	?palette=default
+|fonts	cursive=Eagle+Lake&menu=Quintessential&menu-size=1.3rem
+
+|technical
+sections	19th: gani+ali, 20th: shayesteh, whois
+local-url	http://localhost/homes/families/namazis/
+live-url	https://namazis.homes.amadeusweb.in/

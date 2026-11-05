@@ -1,6 +1,6 @@
 <?php
 autoSetNode(1, __DIR__, [
-	'nodeSiteName' => humanize(getPageParameterAt(1, '') . ' ' . variable('node')),
+	VARNodeSiteName => humanize(getPageParameterAt(1, '') . ' ' . variable('node')),
 	DontOverwriteLogo => true,
 ]);
 

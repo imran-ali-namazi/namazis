@@ -47,13 +47,12 @@ body { font-family: Verdana, Arial, "MS Sans Serif"; cursor: default; overflow: 
   background: url(img/tree.gif) no-repeat fixed right bottom; text-align: center; }
 body.no-tree { background-image: none; margin-bottom: 25px; }
 
-.family-header { background-color: white; padding-bottom: 15px; }
+.family-header { background-color: white; }
 .family { /*height: 100%;*/ width: 480px; margin: 15px; }
 #information, .family, #menu { text-align: left; }
 
 /*  */
-#themes, #options { color: #3D4F55; font-weight: bold; font-size: 10pt; text-align: left; border-top: 2px solid white;
-  height: 80px; overflow: hidden; width: 150px; padding: 0px 10px 0px 10px; }
+#themes, #options { color: #3D4F55; font-weight: bold; font-size: 10pt; text-align: left; border-top: 2px solid white; padding: 6px; }
 #themes a, #themes a:visited { color: #3D4F55; } #themes img { margin-right: 3px; border: none; } 
 #themes { line-height: 13pt; float: left; border-right: 1px #B9C0C2 solid; }
 #options { float: right; border-left: 1px #B9C0C2 solid; }
